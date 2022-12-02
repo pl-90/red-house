@@ -64,11 +64,9 @@ const Cadastro = () => {
               </div>
 
               <div className="form-group">
-                <a href="/">
                 <button type="submit" className="btn btn-success">
                   Cadastrar
                 </button>
-                </a>
               </div>
             </form>
           </div>
