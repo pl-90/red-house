@@ -64,19 +64,19 @@ export default function Home() {
 
         <nav className={`${styles.navbarSecondary} navbar navbar-light`}>
           <div className="col justify-content-start">
-            <a className={styles.link} href="">
+            <a className={styles.link} >
               Iníco
             </a>{" "}
             /
-            <a className={styles.link} href="">
+            <a className={styles.link} >
               Aparelhos
             </a>{" "}
             /
-            <a className={styles.link} href="">
+            <a className={styles.link} >
               Estatísticas
             </a>{" "}
             /
-            <a className={styles.link} href="">
+            <a className={styles.link} >
               Cômodos
             </a>{" "}
             /
@@ -178,7 +178,7 @@ export default function Home() {
 
       <footer className={`${styles.footer}  d-flex justify-content-between`}>
         <div className="col text-center">
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a  target="_blank" rel="noopener noreferrer">
             <strong>Desenvolvido Por Redstone House</strong>
           </a>
         </div>

@@ -31,7 +31,7 @@ const Login = () => {
                 />
               </div>
 
-              <a className={styles.link} href="/recuperar-senha">
+              <a className={styles.link} >
                 <small>ESQUECI A SENHA</small>
               </a>
 
@@ -45,7 +45,7 @@ const Login = () => {
             <div className={styles.cadastreSe}>
               <p>
                 Ainda não possui conta?{" "}
-                <a className={styles.link} href="/cadastro">
+                <a className={styles.link}>
                   <small>CADASTRE-SE</small>
                 </a>
               </p>
