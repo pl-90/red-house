@@ -1,24 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@700&display=swap');
+
 .container {
   padding: 0 2rem;
 }
 
 .main {
+  background-color: rgb(235, 235, 235);
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 2rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  font-family: 'Mohave', sans-serif;
 }
 
 .footer {
+  background-color: #162630;
   display: flex;
   flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-family: 'Mohave', sans-serif;
 }
 
 .footer a {
@@ -26,11 +32,13 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  font-family: 'Mohave', sans-serif;
 }
 
 .title a {
   color: #0070f3;
   text-decoration: none;
+  font-family: 'Mohave', sans-serif;  
 }
 
 .title a:hover,
@@ -126,4 +134,42 @@
   .logo img {
     filter: invert(1);
   }
+}
+
+.footerIcons {
+  padding-right: 10px;
+}
+
+.navbar {
+  font-family: 'Mohave', sans-serif;
+  background-color: #162630;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbarSecondary {
+  font-family: 'Mohave', sans-serif;
+  background-color: #ffb803;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.link {
+  margin-top: 20px;
+  color: white;
+  text-decoration: none  ;
+}
+
+.card {
+  min-width: 18em;
+  min-height: 10em;
+  border: none;
+}
+
+.aparelhosCard {
+  margin: 10px;
+  min-width: 20em;
 }

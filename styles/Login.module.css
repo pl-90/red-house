@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@700&display=swap');
+
+.container {
+    background-image: linear-gradient(#a51302, #5c0a00);
+    height: 100vh;
+    padding: 2%;
+}
+
+.logo {
+    margin-top: 50px;
+}
+
+.rowLogin {
+    min-width: 100%;
+}
+
+.leftLogin {
+    font-family: 'Mohave', sans-serif;
+    min-width: 200px;
+
+    padding: 6%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    background-color: #372f2f;
+    color: white;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.rightLogin {
+    min-width: 200px;
+
+    min-height: 100%;
+    padding: 6%;
+    background-image: url("../public/background-login.png");
+    background-size: cover;
+    color: white;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.cadastreSe {
+    margin-top: 50px;
+}   
+
+.link {
+    margin-top: 20px;
+    color: #75c51e;
+    text-decoration: none  ;
+}
