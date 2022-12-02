@@ -149,7 +149,7 @@ export default function Home() {
             {aparelhos.length > 0 &&
               aparelhos.map((aparelho) => {
                 return (
-                  <div className="card">
+                  <div key={aparelho.id} className="card">
                     <div
                       className={`${styles.aparelhosCard} card-body d-flex justify-content-between`}
                     >
@@ -163,7 +163,7 @@ export default function Home() {
                         type="button"
                         class="btn btn-danger"
                       >
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAoElEQVRIieWVwQ3DIAxFX7NDUUbKKu0UOXa+5JB7Mgi9uJWDSApYVGn6JYQx3/5gQMC/oAd80B4pgZeIzxsXs8rZGJMV41UGM7/6Dg4jcAOcGjvxFUPX9C72KImd2F7mQn62gE44BraL8LMFAK7AoPwT0O7w37AccuyRJuOrJap+yPD5mpoFivmHecm/J7BIH/5iW03HJKED5gyBWWJOiCdWa1gDu5MzfgAAAABJRU5ErkJggg==" />
+                        Deletar
                       </button>
                     </div>
                   </div>
