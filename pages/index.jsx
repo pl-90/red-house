@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-import { format } from "date-fns";
+import { compareAsc, format } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
 
 import webIcon from "../public/web.png";

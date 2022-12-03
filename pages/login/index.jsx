@@ -3,6 +3,7 @@ import logo from "../../public/logo.png";
 import Image from "next/image";
 
 const Login = () => {
+
   return (
     <div
       className={`${styles.container} d-flex flex-column align-items-center justify-content-center`}

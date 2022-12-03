@@ -33,7 +33,7 @@
 
     min-height: 100%;
     padding: 6%;
-    background-image: url("../public/background-login.png");
+    background-image: url("/background-login.png");
     background-size: cover;
     color: white;
 
