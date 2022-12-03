@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-import { compareAsc, format } from "date-fns";
+import { format } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
 
 import webIcon from "../public/web.png";
@@ -64,22 +64,10 @@ export default function Home() {
 
         <nav className={`${styles.navbarSecondary} navbar navbar-light`}>
           <div className="col justify-content-start">
-            <a className={styles.link} >
-              Iníco
-            </a>{" "}
-            /
-            <a className={styles.link} >
-              Aparelhos
-            </a>{" "}
-            /
-            <a className={styles.link} >
-              Estatísticas
-            </a>{" "}
-            /
-            <a className={styles.link} >
-              Cômodos
-            </a>{" "}
-            /
+            <a className={styles.link}>Iníco</a> /
+            <a className={styles.link}>Aparelhos</a> /
+            <a className={styles.link}>Estatísticas</a> /
+            <a className={styles.link}>Cômodos</a> /
           </div>
         </nav>
       </header>
@@ -145,6 +133,7 @@ export default function Home() {
                 Adicionar
               </button>
             </div>
+            <br />
 
             {aparelhos.length > 0 &&
               aparelhos.map((aparelho) => {
@@ -161,7 +150,7 @@ export default function Home() {
                           removeAparelho(aparelho.id);
                         }}
                         type="button"
-                        class="btn btn-danger"
+                        className="btn btn-danger"
                       >
                         Deletar
                       </button>
@@ -174,11 +163,63 @@ export default function Home() {
             <Image src={grafico} alt="Picture of the author" width={500} />
           </div>
         </div>
+
+        {/* Dicas de consumo */}
+        <div className={`${styles.dicasConsumo}`}>
+          <div className="row d-flex">
+            <div className="col">
+              <h2>Principais Aparelhos:</h2>
+            </div>
+          </div>
+
+          <div className="row d-flex">
+            <div className="col">
+              <div className={`${styles.consumoCard1}`}>
+                <div className="card-body">
+                  <h4 className="card-title">Aparelhos com defeito</h4>
+                  <br />
+                  <p className="card-text">
+                    Verifique se seus aparelhos estão funcionando corretamente,
+                    pois caso estejam com defeito, o consumo pode ser maior que
+                    o normal.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col">
+              <div className={`${styles.consumoCard2}`}>
+                <div className="card-body">
+                  <h4 className="card-title">Funções de stand-by</h4>
+                  <br />
+                  <p className="card-text">
+                    Caso seus aparelhos possuam função "soneca" ou "stand-by" é
+                    aconselhavel que utilize sempre que for sair de casa.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col">
+              <div className={`${styles.consumoCard3}`}>
+                <div class="card-body">
+                  <h4 class="card-title">Educação Financeira</h4>
+                  <br />
+                  <p class="card-text">
+                    Se você não estiver conseguindo pagar todas as contas, tente
+                    cortar gastos, reduza o tempo no chuveiro elétrico ou de
+                    jogatina.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
 
       <footer className={`${styles.footer}  d-flex justify-content-between`}>
         <div className="col text-center">
-          <a  target="_blank" rel="noopener noreferrer">
+          <a target="_blank" rel="noopener noreferrer">
             <strong>Desenvolvido Por Redstone House</strong>
           </a>
         </div>

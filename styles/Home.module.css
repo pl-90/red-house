@@ -173,3 +173,46 @@
   margin: 10px;
   min-width: 20em;
 }
+
+.dicasConsumo {
+  margin: 40px;
+}
+
+.consumoCard1 {
+  padding: 50px;
+  min-width: 18em;
+  max-width: 20em;
+  min-height: 20em;
+  border: none;
+
+  color: white;
+
+  background-image: url("/dica-1.png");
+  background-size: contain;
+}
+
+.consumoCard2 {
+  padding: 50px;
+  min-width: 18em;
+  max-width: 20em;
+  min-height: 20em;
+  border: none;
+
+  color: white;
+
+  background-image: url("/dica-2.png");
+  background-size: contain;
+}
+
+.consumoCard3 {
+  padding: 50px;
+  min-width: 18em;
+  max-width: 20em;
+  min-height: 20em;
+  border: none;
+
+  color: white;
+
+  background-image: url("/dica-3.png");
+  background-size: contain;
+}
